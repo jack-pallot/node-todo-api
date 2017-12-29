@@ -7,7 +7,7 @@ MongoClient.connect("mongodb://localhost:27017/TodoApp", (err, db) => {
   console.log("Connected to MongoDB server");
 
   db
-    .collection("Todos")
+    .collection("Todos") 
     .find({
       _id: new ObjectID("5a385ecc0ea6d33df42893da")
     })
